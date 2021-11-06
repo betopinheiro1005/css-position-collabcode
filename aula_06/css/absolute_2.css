@@ -1,0 +1,46 @@
+/*
+  1) 'position: absolute' em elementExample-internal usa como referência a tela
+  2) Para usar como referência o pai, position tem que ser diferente de static
+  (absolute ou relative) no elemento pai.
+  3) 'position: absolute' se move com relação à tela, com exceção de quando o pai que está com 'position: absolute' tem um valor diferente de static. Nesse caso, a referência passará a ser o pai do elmento.
+  4) Para centralizar o elemento deve-se usar translate: transform(=50%, -50%)
+*/
+
+.elementExample {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;  /* Linha com mesma altura do elemento, centralizando verticalmente o texto nas caixas */
+  color: #FFF;
+  text-transform: uppercase;  /* Deixa o texto em caixa alta */
+  text-align: center;   /* Centraliza horizontalmente o texto nos boxes */
+  cursor: pointer;
+}
+
+.elementExample_first {
+  background-color: #6c5ce7;
+  position: absolute;
+  right: 0;
+}
+.elementExample_second {
+  background-color: #00b893;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  /* 50% do elemento */
+}
+
+.elementExample_last {
+  background-color: #d63031;
+  position: relative;   /* position tem que ser diferente de static. Também pode ser usado: position: absolute */
+}
+
+.elementExample-internal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #00cec9;
+}

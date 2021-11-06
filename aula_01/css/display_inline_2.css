@@ -1,0 +1,21 @@
+/*
+  1) 'display: block' permite o uso de 'width' (largura do box) e 'height' (altura do box)
+*/
+
+.example {
+    color: #FFF;
+}
+
+.example-item {
+    width: 33.333%;
+    height: 150px;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3B97D3;
+}

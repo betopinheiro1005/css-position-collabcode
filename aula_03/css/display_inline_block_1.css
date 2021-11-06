@@ -1,0 +1,23 @@
+/*
+    1) 'display: inline-block' é a junção de 'display: inline' com 'display: block'.
+    2) Com 'display: inline-block', os elementos são dispostos em uma linha e é possível usar 'width' e 'height'.
+*/
+
+.example {
+    color: #FFF;
+}
+
+.example-item {
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3B97D3;
+}

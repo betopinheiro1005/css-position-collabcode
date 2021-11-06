@@ -1,0 +1,11 @@
+Lista de aulas:
+
+aula_01: display: inline;
+aula_02: display: block;
+aula_03: display: inline-block;
+aula_04: float: left; float: right; clear: both;
+aula_05: position: relative; e postion: static;
+aula_06: position: absolute;
+aula_07: position: fixed;
+aula_08: Variáveis no CSS ou custom properties do CSS
+aula_09: Background simples mas pode ser que não

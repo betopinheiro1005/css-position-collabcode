@@ -1,0 +1,37 @@
+/*
+  1) 'position: absolute' usa como referência a tela em si.
+*/
+
+.elementExample {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;  /* Linha com mesma altura do elemento, centralizando verticalmente o texto nas caixas */
+  color: #FFF;
+  text-transform: uppercase;  /* Deixa o texto em caixa alta */
+  text-align: center;   /* Centraliza horizontalmente o texto nos boxes */
+  cursor: pointer;
+}
+
+.elementExample_first {
+  background-color: #6c5ce7;
+  position: absolute;
+  right: 0;
+}
+.elementExample_second {
+  background-color: #00b893;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  /* 50% do elemento */
+}
+
+.elementExample_last {
+  background-color: #d63031;
+}
+
+.elementExample-internal {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #00cec9;
+}

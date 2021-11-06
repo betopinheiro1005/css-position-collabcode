@@ -1,0 +1,48 @@
+/*
+  1) 'position: fixed' deixa o contexto vago.
+*/
+
+body{
+  padding-top: 95px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  border-bottom: 1px solid #222f3e;
+}
+
+.header-logo{
+  height: 50px;
+}
+
+.banner {
+  background-color: #5f27cd;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.button {
+  display: block;
+  width: 160px;
+  height: 60px;
+  opacity: 0.95;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1dd1e1;
+}
+
+p{
+  margin-bottom: 20px;
+}

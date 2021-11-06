@@ -1,0 +1,28 @@
+/*
+    1) 'width' e 'height' não funcionam com 'display: inline'. Portanto, se forem utilizados não terão nenhum efeito.
+    2) Com 'display: inline', os elementos ficam um ao lado do outro com um espaço entre eles. Isso acontece porque os elementos terão o comportamento de uma palavra.
+    3) <enter> não é representado como uma quebra de linha e sim como um espaço pelos browsers.
+*/
+
+.example {
+    color: #FFF;
+}
+
+.example-item {
+    width: 33.333%;  /* não funciona com display: inline */
+    height: 150px;  /* não funciona com display: inline */
+    display: inline;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3B97D3;
+}
+
+h3{
+    color: black;
+}

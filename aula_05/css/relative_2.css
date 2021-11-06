@@ -1,0 +1,31 @@
+/*
+  1) 'position: relative' cria um novo contexto. Com 'position: relative' nos dois elementos, ambos ficam no mesmo contexto.
+  2) 'z-index' indica a ordem de posicionamento do elemento. O padrão dos elementos é 'z-index: 0'.
+  3) Com 'z-index: 1' e 'position: relative' no segundo elemento, o mesmo ficará á frente do primeiro elemento.
+  4) O elemento que vem depois no html fica à frente do outro.
+  5) Utilizando javascript é possível alternar a posição dos elementos de acordo com um evento (por exemplo: o click no elemento). O elemento que tiver 'z-index: 1' ficará a frente do outro.
+*/
+
+.elementExample {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;  /* Linha com mesma altura do elemento, centralizando verticalmente o texto nas caixas */
+  color: #FFF;
+  text-transform: uppercase;  /* Deixa o texto em caixa alta */
+  text-align: center;   /* Centraliza horizontalmente o texto nos boxes */
+  cursor: pointer;
+}
+
+.elementExample_first {
+  background-color: #8E44AD;
+  position: relative;
+  top: 200px;
+}
+.elementExample_last {
+  background-color: #C0392B;
+  position: relative;
+}
+
+.elementExample_isActive{
+  z-index: 1;
+}

@@ -1,0 +1,37 @@
+/*
+    1) Usando 'display: inline-block' com 'text-align: justify' no elemento pai, os elementos filhos serão justificados na linha, com exceção da última linha.
+    2) Como só temos uma linha, é necessário um truque para funcionar: criar, usando o CSS, um último elemento do tipo 'display: inline-block', largura de 100% (para ocupar toda linha), e com conteúdo em branco (para não aparecer).
+*/
+
+.example {
+    color: #FFF;
+    text-align: justify;  /* Justifica os elementos na linha, exceto na última linha */
+    line-height: 150px;  /* Linha com mesma altura do elemento, centralizando verticalmente o texto nas caixas */
+}
+
+/* truque para funcionar */
+
+.example::after{
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+.example-item {
+    display: inline-block;
+    text-align: center;  /* centraliza o texto no box */
+    width: 25%;
+    height: 150px;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+    margin-left: auto;
+}
+.example-item_third {
+    background-color: #3B97D3;
+    margin-left: auto;
+    margin-right: auto;
+}

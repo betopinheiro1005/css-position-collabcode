@@ -1,0 +1,25 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.bola{
+  background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--4NKfyYpY--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/173104/b22e6060-52af-4c85-89cb-47d487832bd2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(242, 90, 111, 0.5);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #6c5ce7;
+  cursor: pointer;
+}
+
+.bola:hover{
+  background-color: #ff7675;
+  border-color: rgba(0, 0, 0, 0.2);
+}

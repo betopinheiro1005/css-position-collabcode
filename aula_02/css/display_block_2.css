@@ -1,0 +1,32 @@
+/*
+  1) 'margin-left: auto;' - alinha o elemento à direita.
+  2) 'margin-right: auto;' - alinha o elemento à esquerda.
+  3) 'margin-left: auto;' e 'margin-right: auto' - centraliza o elemento.
+
+    Atenção: Para funcionar é necessário setar a largura do elemento (width) com qualquer valor, caso contrário ele ocupará toda a linha.
+
+*/
+
+.example {
+    color: #FFF;
+    text-align: center;  /* Alinha ao centro o texto nos boxes */
+    line-height: 150px;  /* Centraliza verticalmente o texto nos boxes */
+}
+
+.example-item {
+    display: block;  /* Este é o valor padrão para o elemento */
+    width: 25%;
+    height: 150px;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+    margin-left: auto;
+}
+.example-item_third {
+    background-color: #3B97D3;
+    margin-left: auto;
+    margin-right: auto;
+}

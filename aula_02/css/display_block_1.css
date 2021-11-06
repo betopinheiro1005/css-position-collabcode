@@ -1,0 +1,23 @@
+/*
+    1) A tag 'li' tem como padrão definido pelo browser a propriedade display com valor block, ou seja, ocupa toda a linha.
+    2) Não é possível em um elemento do tipo block ter outro elemento na mesma linha.
+*/
+
+.example {
+    color: #FFF;
+}
+
+.example-item {
+    background-color: yellow;
+    width: 33.333%;   /* cada box irá ocupar 1/3 do espaço horizontal (espaço da linha) */
+    height: 150px;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3B97D3;
+}
